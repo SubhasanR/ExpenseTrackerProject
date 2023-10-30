@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+a {
+  color: #0e0d0d;
+  font-size: 14px;
+  display: block;
+}
+.login-title {
+  text-align: center;
+  font-style: obique;
+}
+.sig {
+  padding-top: 400px;
+}
+
+.login-title-head {
+  /* padding-top: -30px; */
+  text-align: center;
+  font-size: 30px;
+}
+#login-page {
+  display: flex;
+  height: 90vh;
+}
+
+.login {
+  width: 50%;
+  height: 86vh;
+  border-radius: 10px;
+  padding: 70px;
+}
+.login a {
+  margin-top: 25px;
+  text-align: center;
+}
+.form-login {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  color: #060b09;
+  font-size: 35px;
+}
+.form-login label {
+  text-align: left;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-left: 20px;
+  display: block;
+  color: #050505;
+}
+.input-email,
+.input-password {
+  width: 100%;
+  background: #ededed;
+  border-radius: 25px;
+  margin: 4px 0 10px 0;
+  padding: 10px;
+  display: flex;
+  /* padding-bottom: -400px; */
+}
+.icon {
+  padding: 4px;
+  color: #030303;
+  min-width: 30px;
+  text-align: center;
+}
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 4px 0;
+  outline: none;
+  
+}
+button[type="submit"] {
+  width: 100%;
+  border: 0;
+  border-radius: 25px;
+  padding: 14px;
+  background: #060b09;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: ease all 0.3s;
+}
+button[type="submit"]:hover {
+  opacity: 0.9;
+}
+.background {
+  width: 70%;
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+}
+.background h1 {
+  max-width: 420px;
+  color: #fff;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+.background p {
+  max-width: 650px;
+  color: #1a1a1a;
+  font-size: 15px;
+  text-align: right;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+.created {
+  margin-top: 40px;
+  text-align: center;
+}
+.created p {
+  font-size: 13px;
+  font-weight: bold;
+  color: #008552;
+}
+.created a {
+  color: #040404;
+  font-weight: normal;
+  text-decoration: none;
+  margin-top: 0;
+}
+.checkbox label {
+  display: inline;
+  margin: 0;
+}
+
+.home {
+  background: linear-gradient(55deg, #ffffff, #f3f3f3);
+  min-height: 100vh;
+  padding: 20px 30px;
+  margin-right: 0%;
+  padding-right: 0%;
+}
+.hightlight {
+  color: rgb(31, 31, 31);
+}
+
+.home .header {
+  color: rgb(31, 31, 31);
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+}
+
+.home .main {
+  min-height: 666px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.home-content-title {
+  color: #e8eaf2;
+}
+
+.main {
+  padding: 30px;
+}
+.home-content-subtitle {
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.home-content-btn {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  padding: 25px 20px;
+  border: 1px solid #40005d;
+  background-color: #40005d;
+  color: #e8eaf2;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.home-img {
+  min-width: 595px;
+}
+
+@media (max-width: 991px) {
+  .main {
+    flex-wrap: wrap;
+  }
+  .home-content {
+    text-align: center;
+  }
+}
+
+.form-login button {
+  width: 300px;
+}
+
+.home {
+  background: linear-gradient(
+    90deg,
+    rgba(187, 247, 208, 1) 0%,
+    rgba(134, 239, 172, 1) 75%
+  );
+}
+
+.login {
+  background: linear-gradient(
+    90deg,
+    rgba(134, 239, 172, 1) 0%,
+    rgba(74, 222, 128, 1) 99%
+  );
+  /* height: 700px !important; */
+
+  border: 2px solid #4ade80;
+  border-radius: 1rem t;
+}
+
+.home-content,
+.home-content-title {
+  color: #052e16;
+}
+
+.login-title-head {
+  color: #052e16;
+}
+
+.login-title {
+  color: #052e16;
+}
+.topnav {
+  background-color: #010101;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  padding-left: 21px;
+}
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1.4rem 1rem;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ffffff;
+  color: black;
+  background: linear-gradient(
+    90deg,
+    rgba(134, 239, 172, 1) 0%,
+    rgba(74, 222, 128, 1) 99%
+  );
+}
+
+.topnav a.active {
+  background: linear-gradient(
+    90deg,
+    rgba(134, 239, 172, 1) 0%,
+    rgba(74, 222, 128, 1) 99%
+  );
+  color: white;
+  border-radius: 10px;
+}

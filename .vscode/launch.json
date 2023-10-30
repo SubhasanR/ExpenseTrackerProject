@@ -1,0 +1,41 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "DietplannerApplication",
+      "request": "launch",
+      "mainClass": "com.ionhax.dietplanner.dietplanner.DietplannerApplication"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ExpensetrackerApplication<expense_management>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.expense.ExpensetrackerApplication",
+      "projectName": "expense_management",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=64086 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=expense_management"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-DietplannerApplication<dietplanner>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.ionhax.dietplanner.dietplanner.DietplannerApplication",
+      "projectName": "dietplanner",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-DietplannerApplication<dietplanner (2)>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.ionhax.dietplanner.dietplanner.DietplannerApplication",
+      "projectName": "dietplanner (2)",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

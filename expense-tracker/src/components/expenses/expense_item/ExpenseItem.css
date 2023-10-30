@@ -1,0 +1,142 @@
+.expense-item {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+  background: radial-gradient(circle, rgba(236,252,203,1) 0%, rgba(2,6,23,1) 100%);
+}
+
+.expense-item__description {
+  display: flex;
+  flex-direction: column !important;
+  gap: 1rem;
+  flex: 1;
+}
+
+.expense-item h2 {
+  color: #cfe3b2;
+  font-size: 1rem;
+  flex: 1;
+  margin: 0 1rem;
+  color: rgb(218, 247, 209);
+}
+
+.expense-item__price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(10, 9, 9);
+
+  border: 1px solid rgb(47, 44, 44);
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+@media (min-width: 580px) {
+  .expense-item__description {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .expense-item__description h2 {
+    font-size: 1.25rem;
+  }
+
+  .expense-item__price {
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+.loaderSkeleton {
+  margin: 0.5rem 0;
+}
+
+.expense-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.expense-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  border: 2px solid #a3a3a3;
+  background-color: #f5f5f5; 
+  padding: 1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.expense-item:hover {
+  background-color: #e5e5e5; 
+  transform: scale(1.02); 
+}
+
+.expense-item__date {
+  font-size: 0.9rem; 
+  color: #6f6f6f;
+  padding: 0.2rem 0.5rem; 
+  border-radius: 8px;
+  background-color: #eaeaea;
+  margin-bottom: 0.5rem; 
+}
+
+.expense-item h2 {
+  font-size: 1.1rem; 
+  color: white;
+  margin: 0.5rem 0; 
+}
+
+.expense-item__price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff6b6b; 
+  background-color: #fff;
+  border: 1px solid #191818;
+  padding: 0.5rem;
+  border-radius: 12px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.expense-item__price:hover {
+  background: linear-gradient(90deg, #ff1f1f 0%, #f77e7e 99%);
+  color: white;
+  
+}
+
+@media (min-width: 580px) {
+  .expense-item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .expense-item__date {
+    font-size: 1rem; 
+    margin-right: 1rem; 
+  }
+
+  .expense-item h2 {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  .expense-item__price {
+    font-size: 1.4rem; 
+    padding: 0.5rem 1rem; 
+  }
+}
+
+.expense-item {
+  width: 100%;
+}
+
+.expense-item__description * {
+  color: #404040 !important;
+}

@@ -1,0 +1,19 @@
+nav {
+  position: sticky !important;
+  z-index: 10;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.fea
+{
+  margin-left:-900px;
+  margin-right: -900px;
+}
+.he
+{
+   padding-right:-70px;
+   margin-left:60px;
+}
